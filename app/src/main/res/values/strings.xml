@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Marcador de Truco</string>
+    <string name="app_name">Truco</string>
     <string name="titulo_inicial">Marcador de Truco</string>
 
     <string name="jogador1">Jogador 1</string>
