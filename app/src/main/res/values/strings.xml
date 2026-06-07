@@ -1,16 +1,15 @@
 <resources>
-    <string name="app_name">AvaliacaoTruco</string>
-    <string name="titulo_inicial">Marcador Truco</string>
+    <string name="app_name">Marcador de Truco</string>
+    <string name="titulo_inicial">Marcador de Truco</string>
 
-    <string name="jogador_1">Jogador 1: 0</string>
-    <string name="nome_jogador1">Nome do Jogador 1:</string>
-    <string name="part_jogador1">Jogador 1: XX Partidas</string>
+    <string name="jogador1">Jogador 1</string>
+    <string name="jogador2">Jogador 2</string>
+    <string name="vantagem">VANTAGEM</string>
 
-    <string name="ex_nome">Ex: Fulano</string>
-
-    <string name="jogador_2">Jogador 2: 0</string>
-    <string name="nome_jogador2">Nome do Jogador 2:</string>
-    <string name="part_jogador2">Jogador 2: XX Partidas</string>
+    <string name="nome_jogador1">Nome do Jogador 1</string>
+    <string name="ex_jogador1">Ex: Jogador 1</string>
+    <string name="nome_jogador2">Nome do Jogador 2</string>
+    <string name="ex_jogador2">Ex: Jogador 2</string>
 
     <string name="placar_jogador">%1$s: %2$d</string>
 
@@ -23,15 +22,18 @@
     <string name="mensagem_vencedor">O vencedor foi: %1$s!</string>
     <string name="fim_partida">Fim de Partida!</string>
 
-    <string name="historico_jogadas">Hist. de Jogadas</string>
-    <string name="historico_jogador">%1$s: %2$d partida(s) ganha(s)</string>
+    <string name="historico_jogadas">Histórico</string>
+    <string name="partidas_ganhas">%1$d Partidas Ganhas</string>
 
-    <string name="limpar_historico">Limpar Histórico</string>
+    <string name="limpar">Limpar</string>
     <string name="mensagem_historico">Histórico e pontuações resetados com sucesso!</string>
 
-    <string name="inf_nomes">Inf. Nomes</string>
+    <string name="nomes">Nomes</string>
     <string name="titulo_equipes">Informar Nomes</string>
-    <string name="confirmar">Confirmar</string>
+    <string name="sub_titulo_equipes">Defina os duelistas da partida</string>
+    <string name="confirmar">CONFIRMAR</string>
+
     <string name="titulo_historico">Histórico de Jogadas</string>
-    <string name="voltar">Voltar</string>
+    <string name="sub_titulo_historico">Estatísticas acumuladas da sessão atual</string>
+    <string name="placar_zerado">0</string>
 </resources>

@@ -2,5 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="color_1">#4CAF50</color>
+    <color name="background_dark">#121212</color>
+    <color name="card_background">#1E2530</color>
+    <color name="neon_green">#4ade80</color>
+    <color name="neon_green_alpha">#334ade80</color>
+    <color name="text_secondary">#94a3b8</color>
+    <color name="button_inactive">#2d3748</color>
+    <color name="card_stroke">#334ade80</color>
 </resources>

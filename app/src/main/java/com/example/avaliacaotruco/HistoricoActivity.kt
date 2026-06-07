@@ -24,7 +24,10 @@ class HistoricoActivity : AppCompatActivity() {
         val nomeJ2 = intent.getStringExtra("nomeJ2") ?: "Jogador 2"
         val vitoriasJ2 = intent.getIntExtra("vitoriasJ2", 0)
 
-        findViewById<TextView>(R.id.tvHistoricoJ1).text = getString(R.string.historico_jogador, nomeJ1, vitoriasJ1)
-        findViewById<TextView>(R.id.tvHistoricoJ2).text = getString(R.string.historico_jogador, nomeJ2, vitoriasJ2)
+        findViewById<TextView>(R.id.tvNomeJ1).text = nomeJ1.uppercase()
+        findViewById<TextView>(R.id.tvVitoriasJ1).text = vitoriasJ1.toString()
+
+        findViewById<TextView>(R.id.tvNomeJ2).text = nomeJ2.uppercase()
+        findViewById<TextView>(R.id.tvVitoriasJ2).text = vitoriasJ2.toString()
     }
 }

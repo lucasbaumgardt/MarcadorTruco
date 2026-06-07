@@ -1,295 +1,290 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:padding="16dp"
-    android:background="#F8F9FA"
+    android:background="@color/background_dark"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/titulo_inicial"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="#343A40"
-        android:layout_marginBottom="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginHorizontal="16dp"/>
-
-    <androidx.cardview.widget.CardView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="2dp"
-        app:cardUseCompatPadding="true">
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:text="@string/titulo_inicial"
+            android:textColor="@color/neon_green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/tvJogador1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jogador_1"
-                android:textColor="#343A40"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="16dp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:weightSum="5">
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnJ1_1"
-                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:text="@string/mais_1"
-                    android:padding="0dp"
-                    android:textSize="14sp"
-                    android:textColor="@color/white"
-                    app:backgroundTint="@color/color_1"
-                    app:cornerRadius="8dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnJ1_3"
-                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:text="@string/mais_3"
-                    android:padding="0dp"
-                    android:textSize="14sp"
-                    android:textColor="@color/white"
-                    app:backgroundTint="@color/color_1"
-                    app:cornerRadius="8dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnJ1_6"
-                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:text="@string/mais_6"
-                    android:padding="0dp"
-                    android:textSize="14sp"
-                    android:textColor="@color/white"
-                    app:backgroundTint="@color/color_1"
-                    app:cornerRadius="8dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnJ1_9"
-                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:text="@string/mais_9"
-                    android:padding="0dp"
-                    android:textSize="14sp"
-                    android:textColor="@color/white"
-                    app:backgroundTint="@color/color_1"
-                    app:cornerRadius="8dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnJ1_12"
-                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:text="@string/mais_12"
-                    android:padding="0dp"
-                    android:textSize="14sp"
-                    android:textColor="@color/white"
-                    app:backgroundTint="@color/color_1"
-                    app:cornerRadius="8dp" />
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="2dp"
-        app:cardUseCompatPadding="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <TextView
-                android:id="@+id/tvJogador2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jogador_2"
-                android:textColor="#343A40"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="16dp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:weightSum="5">
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnJ2_1"
-                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:text="@string/mais_1"
-                    android:padding="0dp"
-                    android:textSize="14sp"
-                    android:textColor="@color/white"
-                    app:backgroundTint="@color/color_1"
-                    app:cornerRadius="8dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnJ2_3"
-                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:text="@string/mais_3"
-                    android:padding="0dp"
-                    android:textSize="14sp"
-                    android:textColor="@color/white"
-                    app:backgroundTint="@color/color_1"
-                    app:cornerRadius="8dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnJ2_6"
-                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:text="@string/mais_6"
-                    android:padding="0dp"
-                    android:textSize="14sp"
-                    android:textColor="@color/white"
-                    app:backgroundTint="@color/color_1"
-                    app:cornerRadius="8dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnJ2_9"
-                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:text="@string/mais_9"
-                    android:padding="0dp"
-                    android:textSize="14sp"
-                    android:textColor="@color/white"
-                    app:backgroundTint="@color/color_1"
-                    app:cornerRadius="8dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnJ2_12"
-                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:text="@string/mais_12"
-                    android:padding="0dp"
-                    android:textSize="14sp"
-                    android:textColor="@color/white"
-                    app:backgroundTint="@color/color_1"
-                    app:cornerRadius="8dp" />
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <View
+        android:id="@+id/topDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/topBar" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintTop_toBottomOf="@id/topDivider">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardJogador1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="@color/neon_green"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivUserJogador1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@android:drawable/ic_menu_myplaces"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/text_secondary" />
+
+                    <TextView
+                        android:id="@+id/tvLabelJogador1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/jogador1"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@id/ivUserJogador1"
+                        app:layout_constraintStart_toEndOf="@id/ivUserJogador1"
+                        app:layout_constraintTop_toTopOf="@id/ivUserJogador1" />
+
+                    <TextView
+                        android:id="@+id/tvVantagemJogador1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_vantagem"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="4dp"
+                        android:text="@string/vantagem"
+                        android:textColor="@color/neon_green"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvPontosJogador1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/placar_zerado"
+                        android:textColor="@color/neon_green"
+                        android:textSize="80sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvLabelJogador1" />
+
+                    <LinearLayout
+                        android:id="@+id/llButtonsJogador1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_constraintTop_toBottomOf="@id/tvPontosJogador1">
+
+                        <Button
+                            android:id="@+id/btnJ1_1"
+                            style="@style/ScoreButtonStyle"
+                            android:text="@string/mais_1" />
+
+                        <Button
+                            android:id="@+id/btnJ1_3"
+                            style="@style/ScoreButtonStyle"
+                            android:text="@string/mais_3" />
+
+                        <Button
+                            android:id="@+id/btnJ1_6"
+                            style="@style/ScoreButtonStyle"
+                            android:text="@string/mais_6" />
+
+                        <Button
+                            android:id="@+id/btnJ1_9"
+                            style="@style/ScoreButtonStyle"
+                            android:text="@string/mais_9" />
+
+                        <Button
+                            android:id="@+id/btnJ1_12"
+                            style="@style/ScoreButtonStyle"
+                            android:text="@string/mais_12" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardJogador2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivUserJogador2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@android:drawable/ic_menu_myplaces"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/text_secondary" />
+
+                    <TextView
+                        android:id="@+id/tvLabelJogador2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/jogador2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@id/ivUserJogador2"
+                        app:layout_constraintStart_toEndOf="@id/ivUserJogador2"
+                        app:layout_constraintTop_toTopOf="@id/ivUserJogador2" />
+
+                    <TextView
+                        android:id="@+id/tvVantagemJogador2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_vantagem"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="4dp"
+                        android:text="@string/vantagem"
+                        android:textColor="@color/neon_green"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvPontosJogador2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/placar_zerado"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="80sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvLabelJogador2" />
+
+                    <LinearLayout
+                        android:id="@+id/llButtonsJogador2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_constraintTop_toBottomOf="@id/tvPontosJogador2">
+
+                        <Button
+                            android:id="@+id/btnJ2_1"
+                            style="@style/ScoreButtonStyleInactive"
+                            android:text="@string/mais_1" />
+
+                        <Button
+                            android:id="@+id/btnJ2_3"
+                            style="@style/ScoreButtonStyleInactive"
+                            android:text="@string/mais_3" />
+
+                        <Button
+                            android:id="@+id/btnJ2_6"
+                            style="@style/ScoreButtonStyleInactive"
+                            android:text="@string/mais_6" />
+
+                        <Button
+                            android:id="@+id/btnJ2_9"
+                            style="@style/ScoreButtonStyleInactive"
+                            android:text="@string/mais_9" />
+
+                        <Button
+                            android:id="@+id/btnJ2_12"
+                            style="@style/ScoreButtonStyleInactive"
+                            android:text="@string/mais_12" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
+        android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/background_dark"
+        android:baselineAligned="false"
+        android:gravity="center"
         android:orientation="horizontal"
-        android:weightSum="3"
-        android:paddingTop="8dp">
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnZerarHistorico"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="0dp"
-            android:layout_height="90dp"
-            android:layout_weight="1"
-            android:layout_margin="4dp"
-            android:text="@string/limpar_historico"
-            android:textColor="#6C757D"
-            android:textSize="11sp"
-            app:strokeColor="#DEE2E6"
-            app:cornerRadius="16dp"
-            app:icon="@android:drawable/ic_menu_rotate"
-            app:iconGravity="top"
-            app:iconSize="24dp"
-            app:iconTint="#6C757D"/>
+            android:id="@+id/btnLimparTab"
+            style="@style/NavButtonStyle"
+            android:text="@string/limpar"
+            app:icon="@android:drawable/ic_menu_rotate" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnInfNomes"
-            android:layout_width="0dp"
-            android:layout_height="90dp"
-            android:layout_weight="1"
-            android:layout_margin="4dp"
-            android:text="@string/inf_nomes"
-            android:textColor="#FFFFFF"
-            android:textSize="11sp"
-            app:backgroundTint="@color/color_1"
-            app:cornerRadius="16dp"
-            app:icon="@android:drawable/ic_menu_add"
-            app:iconGravity="top"
-            app:iconSize="24dp"
-            app:iconTint="#FFFFFF"/>
+            android:id="@+id/btnNomesTab"
+            style="@style/NavButtonStyle"
+            android:text="@string/nomes"
+            app:icon="@android:drawable/ic_menu_add" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnHistorico"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="0dp"
-            android:layout_height="90dp"
-            android:layout_weight="1"
-            android:layout_margin="4dp"
+            android:id="@+id/btnHistoricoTab"
+            style="@style/NavButtonStyle"
             android:text="@string/historico_jogadas"
-            android:textColor="#6C757D"
-            android:textSize="11sp"
-            app:strokeColor="#DEE2E6"
-            app:cornerRadius="16dp"
-            app:icon="@android:drawable/ic_menu_recent_history"
-            app:iconGravity="top"
-            app:iconSize="24dp"
-            app:iconTint="#6C757D"/>
+            app:icon="@android:drawable/ic_menu_recent_history" />
+
     </LinearLayout>
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
